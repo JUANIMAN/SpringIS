@@ -13,7 +13,7 @@ import java.util.Date;
 public class Empleado {
     private String nombre;
     private int idEmpleado;
-    private double salario;
+    private String salario;
     private String puesto;
     private String departamento;
     private String fechaNacimiento;
