@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Empleados</title>
+    <style>
+        /* Estilos para la tabla */
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        thead {
+            background-color: #0077be;
+            color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        td:last-child {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<h1>Tabla de empleados</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Salario</th>
+        <th>Puesto</th>
+        <th>Departamento</th>
+        <th>Fecha de nacimiento</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${empleado.idEmpleado}"></td>
+        <td th:text="${empleado.nombre}"></td>
+        <td th:text="${empleado.salario}"></td>
+        <td th:text="${empleado.puesto}"></td>
+        <td th:text="${empleado.departamento}"></td>
+        <td th:text="${empleado.fechaNacimiento}"></td>
+    </tr>
+    <tr>
+        <td th:text="${empleado1.idEmpleado}"></td>
+        <td th:text="${empleado1.nombre}"></td>
+        <td th:text="${empleado1.salario}"></td>
+        <td th:text="${empleado1.puesto}"></td>
+        <td th:text="${empleado1.departamento}"></td>
+        <td th:text="${empleado1.fechaNacimiento}"></td>
+    </tr>
+    <tr>
+        <td th:text="${empleado2.idEmpleado}"></td>
+        <td th:text="${empleado2.nombre}"></td>
+        <td th:text="${empleado2.salario}"></td>
+        <td th:text="${empleado2.puesto}"></td>
+        <td th:text="${empleado2.departamento}"></td>
+        <td th:text="${empleado2.fechaNacimiento}"></td>
+    </tr>
+    <tr>
+        <td th:text="${empleado3.idEmpleado}"></td>
+        <td th:text="${empleado3.nombre}"></td>
+        <td th:text="${empleado3.salario}"></td>
+        <td th:text="${empleado3.puesto}"></td>
+        <td th:text="${empleado3.departamento}"></td>
+        <td th:text="${empleado3.fechaNacimiento}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
